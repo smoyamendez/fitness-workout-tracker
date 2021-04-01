@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // CONNECT TO MONGO DATABASE WITH MONGOOSE
-Mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+Mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessdb", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
